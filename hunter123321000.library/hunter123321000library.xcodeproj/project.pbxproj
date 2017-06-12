@@ -16,6 +16,12 @@
 		0F7DA0141EED88CC004CC0A4 /* dataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */; };
 		0F7DA0151EED88CC004CC0A4 /* dataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */; };
 		0F7DA0171EED894F004CC0A4 /* testDataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0161EED894F004CC0A4 /* testDataConvert.swift */; };
+		0F7DA01E1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */; };
+		0F7DA01F1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */; };
+		0F7DA04C1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */; };
+		0F7DA04D1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */; };
+		0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
+		0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,9 @@
 		0F7DA0111EED2FF5004CC0A4 /* testCommomFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testCommomFunc.swift; sourceTree = "<group>"; };
 		0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataConvert.swift; sourceTree = "<group>"; };
 		0F7DA0161EED894F004CC0A4 /* testDataConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testDataConvert.swift; sourceTree = "<group>"; };
+		0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 				0F7D9FF51EED227E004CC0A4 /* Info.plist */,
 				0F7DA00E1EED2822004CC0A4 /* commonFunc.swift */,
 				0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */,
+				0F7DA04A1EEE81AE004CC0A4 /* CustomUI */,
 			);
 			path = hunter123321000.library;
 			sourceTree = "<group>";
@@ -98,6 +108,16 @@
 				0F7DA0161EED894F004CC0A4 /* testDataConvert.swift */,
 			);
 			path = hunter123321000.libraryTests;
+			sourceTree = "<group>";
+		};
+		0F7DA04A1EEE81AE004CC0A4 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */,
+				0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */,
+				0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */,
+			);
+			name = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */,
+				0F7DA01E1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */,
 				0F7DA00F1EED2822004CC0A4 /* commonFunc.swift in Sources */,
+				0F7DA04C1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
 				0F7DA0141EED88CC004CC0A4 /* dataConvert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,11 +245,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7DA01F1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */,
+				0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */,
 				0F7DA0001EED227E004CC0A4 /* hunter123321000_libraryTests.swift in Sources */,
 				0F7DA0121EED2FF5004CC0A4 /* testCommomFunc.swift in Sources */,
 				0F7DA0171EED894F004CC0A4 /* testDataConvert.swift in Sources */,
 				0F7DA0101EED2822004CC0A4 /* commonFunc.swift in Sources */,
 				0F7DA0151EED88CC004CC0A4 /* dataConvert.swift in Sources */,
+				0F7DA04D1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
