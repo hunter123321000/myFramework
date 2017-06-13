@@ -22,6 +22,7 @@
 		0F7DA04D1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */; };
 		0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
 		0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
+		714BD33D1EEFB01E009534FF /* alertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BD33C1EEFB01E009534FF /* alertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		714BD33C1EEFB01E009534FF /* alertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				0F7D9FF41EED227E004CC0A4 /* hunter123321000.library.h */,
 				0F7D9FF51EED227E004CC0A4 /* Info.plist */,
+				714BD33C1EEFB01E009534FF /* alertView.swift */,
 				0F7DA00E1EED2822004CC0A4 /* commonFunc.swift */,
 				0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */,
 				0F7DA04A1EEE81AE004CC0A4 /* CustomUI */,
@@ -238,6 +241,7 @@
 				0F7DA00F1EED2822004CC0A4 /* commonFunc.swift in Sources */,
 				0F7DA04C1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
 				0F7DA0141EED88CC004CC0A4 /* dataConvert.swift in Sources */,
+				714BD33D1EEFB01E009534FF /* alertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +460,7 @@
 				0F7DA0071EED227E004CC0A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F7DA0081EED227E004CC0A4 /* Build configuration list for PBXNativeTarget "hunter123321000libraryTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				0F7DA00A1EED227E004CC0A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
