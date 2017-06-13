@@ -11,17 +11,23 @@
 		0F7DA0001EED227E004CC0A4 /* hunter123321000_libraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D9FFF1EED227E004CC0A4 /* hunter123321000_libraryTests.swift */; };
 		0F7DA0021EED227E004CC0A4 /* hunter123321000.library.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7D9FF41EED227E004CC0A4 /* hunter123321000.library.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F7DA00F1EED2822004CC0A4 /* commonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA00E1EED2822004CC0A4 /* commonFunc.swift */; };
-		0F7DA0101EED2822004CC0A4 /* commonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA00E1EED2822004CC0A4 /* commonFunc.swift */; };
 		0F7DA0121EED2FF5004CC0A4 /* testCommomFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0111EED2FF5004CC0A4 /* testCommomFunc.swift */; };
 		0F7DA0141EED88CC004CC0A4 /* dataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */; };
 		0F7DA0151EED88CC004CC0A4 /* dataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */; };
 		0F7DA0171EED894F004CC0A4 /* testDataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0161EED894F004CC0A4 /* testDataConvert.swift */; };
-		0F7DA01E1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */; };
-		0F7DA01F1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */; };
 		0F7DA04C1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */; };
 		0F7DA04D1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */; };
 		0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
 		0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
+		0F7DA07E1EEE9FB6004CC0A4 /* commonFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA00E1EED2822004CC0A4 /* commonFunc.swift */; };
+		0F7DA08C1EEEE48F004CC0A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA08B1EEEE48F004CC0A4 /* PaddingLabel.swift */; };
+		0F7DA08D1EEEE48F004CC0A4 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA08B1EEEE48F004CC0A4 /* PaddingLabel.swift */; };
+		0F7DA0971EEEE5FF004CC0A4 /* PaddingLabel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0961EEEE5FF004CC0A4 /* PaddingLabel2.swift */; };
+		0F7DA0981EEEE5FF004CC0A4 /* PaddingLabel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0961EEEE5FF004CC0A4 /* PaddingLabel2.swift */; };
+		0F7DA0A51EEEF205004CC0A4 /* otherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0A41EEEF205004CC0A4 /* otherButton.swift */; };
+		0F7DA0A61EEEF205004CC0A4 /* otherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0A41EEEF205004CC0A4 /* otherButton.swift */; };
+		0F7DA0B01EEF7222004CC0A4 /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0AF1EEF7222004CC0A4 /* CustomUI.swift */; };
+		0F7DA0B11EEF7222004CC0A4 /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0AF1EEF7222004CC0A4 /* CustomUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +51,12 @@
 		0F7DA0111EED2FF5004CC0A4 /* testCommomFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testCommomFunc.swift; sourceTree = "<group>"; };
 		0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataConvert.swift; sourceTree = "<group>"; };
 		0F7DA0161EED894F004CC0A4 /* testDataConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testDataConvert.swift; sourceTree = "<group>"; };
-		0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		0F7DA08B1EEEE48F004CC0A4 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		0F7DA0961EEEE5FF004CC0A4 /* PaddingLabel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel2.swift; sourceTree = "<group>"; };
+		0F7DA0A41EEEF205004CC0A4 /* otherButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = otherButton.swift; sourceTree = "<group>"; };
+		0F7DA0AF1EEF7222004CC0A4 /* CustomUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +122,12 @@
 		0F7DA04A1EEE81AE004CC0A4 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
-				0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */,
+				0F7DA0A41EEEF205004CC0A4 /* otherButton.swift */,
 				0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */,
-				0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */,
+				0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */,
+				0F7DA08B1EEEE48F004CC0A4 /* PaddingLabel.swift */,
+				0F7DA0961EEEE5FF004CC0A4 /* PaddingLabel2.swift */,
+				0F7DA0AF1EEF7222004CC0A4 /* CustomUI.swift */,
 			);
 			name = CustomUI;
 			sourceTree = "<group>";
@@ -234,10 +246,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */,
-				0F7DA01E1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */,
 				0F7DA00F1EED2822004CC0A4 /* commonFunc.swift in Sources */,
+				0F7DA0B01EEF7222004CC0A4 /* CustomUI.swift in Sources */,
 				0F7DA04C1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
+				0F7DA0971EEEE5FF004CC0A4 /* PaddingLabel2.swift in Sources */,
 				0F7DA0141EED88CC004CC0A4 /* dataConvert.swift in Sources */,
+				0F7DA08C1EEEE48F004CC0A4 /* PaddingLabel.swift in Sources */,
+				0F7DA0A51EEEF205004CC0A4 /* otherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,13 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F7DA01F1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */,
+				0F7DA07E1EEE9FB6004CC0A4 /* commonFunc.swift in Sources */,
+				0F7DA08D1EEEE48F004CC0A4 /* PaddingLabel.swift in Sources */,
 				0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */,
+				0F7DA0B11EEF7222004CC0A4 /* CustomUI.swift in Sources */,
+				0F7DA0981EEEE5FF004CC0A4 /* PaddingLabel2.swift in Sources */,
 				0F7DA0001EED227E004CC0A4 /* hunter123321000_libraryTests.swift in Sources */,
 				0F7DA0121EED2FF5004CC0A4 /* testCommomFunc.swift in Sources */,
 				0F7DA0171EED894F004CC0A4 /* testDataConvert.swift in Sources */,
-				0F7DA0101EED2822004CC0A4 /* commonFunc.swift in Sources */,
 				0F7DA0151EED88CC004CC0A4 /* dataConvert.swift in Sources */,
+				0F7DA0A61EEEF205004CC0A4 /* otherButton.swift in Sources */,
 				0F7DA04D1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

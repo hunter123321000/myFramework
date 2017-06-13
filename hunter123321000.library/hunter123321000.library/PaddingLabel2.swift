@@ -1,20 +1,19 @@
 //
-//  PaddingLabel2.swift
+//  BorderedButton2.swift
 //  hunter123321000library
 //
 //  Created by HungLi Chen on 2017/6/12.
 //  Copyright © 2017年 hunter123321000. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-@IBDesignable public class PaddingLabel: UILabel {
-    
+@IBDesignable class PaddingLabel2: UILabel {
+
     @IBInspectable var topInset: CGFloat = 5.0
-    @IBInspectable public var bottomInset: CGFloat = 5.0
-    @IBInspectable public var leftInset: CGFloat = 5.0
-    @IBInspectable public var rightInset: CGFloat = 5.0
+    @IBInspectable var bottomInset: CGFloat = 5.0
+    @IBInspectable var leftInset: CGFloat = 5.0
+    @IBInspectable var rightInset: CGFloat = 5.0
     
     override public func drawText(in rect: CGRect) {
         let insets = UIEdgeInsets(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
@@ -29,4 +28,5 @@ import UIKit
             return contentSize
         }
     }
+
 }
