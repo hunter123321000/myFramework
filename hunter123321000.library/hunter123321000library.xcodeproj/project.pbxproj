@@ -23,6 +23,7 @@
 		0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
 		0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
 		714BD33D1EEFB01E009534FF /* alertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BD33C1EEFB01E009534FF /* alertView.swift */; };
+		717F52591EF135AE00F11076 /* myButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717F52581EF135AE00F11076 /* myButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		714BD33C1EEFB01E009534FF /* alertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertView.swift; sourceTree = "<group>"; };
+		717F52581EF135AE00F11076 /* myButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */,
 				0F7DA04B1EEE81C1004CC0A4 /* BorderedButton.swift */,
 				0F7DA01D1EEE7E3A004CC0A4 /* PaddingLabel.swift */,
+				717F52581EF135AE00F11076 /* myButton.xib */,
 			);
 			name = CustomUI;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717F52591EF135AE00F11076 /* myButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

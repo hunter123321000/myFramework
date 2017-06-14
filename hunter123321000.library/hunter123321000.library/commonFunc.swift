@@ -25,6 +25,7 @@ public class commonFunc: NSObject {
         }
         return false
     }
+    
     public func isSameInput(any1:Any,_ anys:Any...) -> Bool{
         var tmp:Int = 0;
         for any in anys{
@@ -42,6 +43,31 @@ public class commonFunc: NSObject {
             }
         }
         return false
+    }
+    
+    public func isValidEmail(enteredEmail:String) -> Bool {
+        
+        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)//SELF MATCHES is keyword
+        return emailPredicate.evaluate(with: enteredEmail)
+    }
+    
+    public func isValidPwd(pwd:String,maxLen:Int) -> Bool {
+        /*
+         ^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$
+         
+         ^                         Start anchor
+         (?=.*[A-Z].*[A-Z])        Ensure string has two uppercase letters.
+         (?=.*[!@#$&*])            Ensure string has one special case letter.
+         (?=.*[0-9].*[0-9])        Ensure string has two digits.
+         (?=.*[a-z].*[a-z].*[a-z]) Ensure string has three lowercase letters.
+         .{8}                      Ensure string is of length 8.
+         $                         End anchor.
+         */
+        
+        let RegEx = "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,"+String(maxLen)+"}$"
+        let pwdPredicate = NSPredicate(format:"SELF MATCHES %@", RegEx)
+        return pwdPredicate.evaluate(with: pwd)
     }
 
 }

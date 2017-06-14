@@ -37,5 +37,7 @@ class testCommonFunc: XCTestCase {
 //        XCTAssert(obj.isSameString(str1: "123",strs: "123","123","123") == true)
         XCTAssert(obj.isSameString(str1: "123", "123","123","123","123") == true)//省略第二個參數之後的參數名稱
         XCTAssert(obj.isSameInput(any1: 123,"123",123,1234,"123") == false)
+        
+        XCTAssert(obj.isValidPwd(pwd: "a123#45A678",maxLen:20) == true)
     }
 }
