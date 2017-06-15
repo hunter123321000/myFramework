@@ -1,7 +1,8 @@
 # myFramework
 develop framework by swift
 ## Useing with Carthage
-<font color= #0099ff >github "hunter123321000/myFramework" ~> 1.0 <font>
+ github "hunter123321000/myFramework" ~> 1.0
+
 ---
 ### 字串及輸入處理
 
