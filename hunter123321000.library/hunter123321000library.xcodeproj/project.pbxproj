@@ -24,6 +24,8 @@
 		0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */; };
 		0F7DA0C81EF18B90004CC0A4 /* myBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA0C71EF18B90004CC0A4 /* myBtn.swift */; };
 		0F7DA1201EF22AEC004CC0A4 /* myBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F7DA11F1EF22AEC004CC0A4 /* myBtn.xib */; };
+		0F7DA1511EF42A15004CC0A4 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7DA1501EF42A15004CC0A4 /* LocalAuthentication.framework */; };
+		0F7DA1531EF42A50004CC0A4 /* touchIDVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA1521EF42A50004CC0A4 /* touchIDVerify.swift */; };
 		714BD33D1EEFB01E009534FF /* alertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BD33C1EEFB01E009534FF /* alertView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		0F7DA04E1EEE8240004CC0A4 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		0F7DA0C71EF18B90004CC0A4 /* myBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myBtn.swift; sourceTree = "<group>"; };
 		0F7DA11F1EF22AEC004CC0A4 /* myBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myBtn.xib; sourceTree = "<group>"; };
+		0F7DA1501EF42A15004CC0A4 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		0F7DA1521EF42A50004CC0A4 /* touchIDVerify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = touchIDVerify.swift; sourceTree = "<group>"; };
 		714BD33C1EEFB01E009534FF /* alertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7DA1511EF42A15004CC0A4 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				0F7D9FF31EED227E004CC0A4 /* hunter123321000.library */,
 				0F7D9FFE1EED227E004CC0A4 /* hunter123321000.libraryTests */,
 				0F7D9FF21EED227E004CC0A4 /* Products */,
+				0F7DA14F1EF42A15004CC0A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +107,7 @@
 				714BD33C1EEFB01E009534FF /* alertView.swift */,
 				0F7DA00E1EED2822004CC0A4 /* commonFunc.swift */,
 				0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */,
+				0F7DA1521EF42A50004CC0A4 /* touchIDVerify.swift */,
 				0F7DA04A1EEE81AE004CC0A4 /* CustomUI */,
 			);
 			path = hunter123321000.library;
@@ -127,6 +134,14 @@
 				0F7DA11F1EF22AEC004CC0A4 /* myBtn.xib */,
 			);
 			name = CustomUI;
+			sourceTree = "<group>";
+		};
+		0F7DA14F1EF42A15004CC0A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F7DA1501EF42A15004CC0A4 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */,
+				0F7DA1531EF42A50004CC0A4 /* touchIDVerify.swift in Sources */,
 				0F7DA01E1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */,
 				0F7DA00F1EED2822004CC0A4 /* commonFunc.swift in Sources */,
 				0F7DA04C1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
