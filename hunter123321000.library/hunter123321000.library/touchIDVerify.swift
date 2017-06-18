@@ -17,28 +17,31 @@ public class touchIDVerify: NSObject {
         var b_verify:Bool = false
         var str_error = ""
         
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            
+        if (context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)) {
             // 開始進入識別狀態，以閉包形式返回結果。閉包的 success 是布爾值，代表識別成功與否。error 為錯誤信息。
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "請用指紋解鎖", reply: {success, error in
-                
-                if success {
-                    // 成功之后的邏輯， 通常使用多線程來實現跳轉邏輯。
-                    b_verify = success
-                }else {
-                    b_verify = !success
-                    if let error = error as NSError? {
-                        // 獲取錯誤信息
-                        let message = self.errorMessageForLAErrorCode(errorCode: error.code)
-                        str_error = message
-                        print(message)
+            OperationQueue.main.addOperation({
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "請用指紋解鎖", reply: {success, error  in
+                    if (success) {
+                        // 成功之后的邏輯， 通常使用多線程來實現跳轉邏輯。
+                        b_verify = success
+//                        return true
+                    }else {
+                        b_verify = !success
+                        if let error = error as NSError? {
+                            // 獲取錯誤信息
+                            let message = self.errorMessageForLAErrorCode(errorCode: error.code)
+                            str_error = message+String(error.code)
+                            print(message)
+                        }
+//                        return true
                     }
                 }
-                
+            )
             })
         }
         return (b_verify,str_error);
     }
+    
     public func errorMessageForLAErrorCode(errorCode: Int) -> String {
         var message = "";
         
@@ -75,5 +78,40 @@ public class touchIDVerify: NSObject {
             message = "Did not find error code on LAError object";
         }
         return message
+    }
+    
+    public func touchIdWithHand(fallBackTitle: String?, succeed: @escaping () -> (), failed: @escaping (_ message: String) -> ()) {
+        
+        guard self.IsSupportTouchID else {
+            print("設備不支持TouchID 或未開啟TouchID ")
+            return
+        }
+        
+        let context = LAContext()
+        context.localizedFallbackTitle = fallBackTitle
+        let reason = "驗證指紋"
+        context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply: { (isSuccess, err) in
+            
+            OperationQueue.main.addOperation({
+                
+                guard isSuccess == true, err == nil else {
+                    let laerror = err as! LAError
+                    let message = self.errorMessageForLAErrorCode(errorCode: laerror.errorCode)
+                    failed(message)
+                    return
+                }
+                succeed()
+            })
+        })
+    }
+    
+    /// 檢查手機 TouchID 功能是否開啟或可以使用
+    public var IsSupportTouchID: Bool {
+        get {
+            let context = LAContext()
+            var error :NSError?
+            let isSupport = context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error)
+            return isSupport
+        }
     }
 }
