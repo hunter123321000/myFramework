@@ -11,11 +11,11 @@ import LocalAuthentication
 
 public class touchIDVerify: NSObject {
 
-    public func isTouchID () -> (Bool,String) {
+    public func isTouchID (succeed: @escaping () -> (),failed: @escaping (_ message: String) -> ()) {
         let context = LAContext()
         var error: NSError?
-        var b_verify:Bool = false
-        var str_error = ""
+//        var b_verify:Bool = false
+//        var str_error = ""
         
         if (context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)) {
             // 開始進入識別狀態，以閉包形式返回結果。閉包的 success 是布爾值，代表識別成功與否。error 為錯誤信息。
@@ -23,23 +23,20 @@ public class touchIDVerify: NSObject {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "請用指紋解鎖", reply: {success, error  in
                     if (success) {
                         // 成功之后的邏輯， 通常使用多線程來實現跳轉邏輯。
-                        b_verify = success
-//                        return true
+                        succeed()
                     }else {
-                        b_verify = !success
                         if let error = error as NSError? {
                             // 獲取錯誤信息
                             let message = self.errorMessageForLAErrorCode(errorCode: error.code)
-                            str_error = message+String(error.code)
+//                            str_error = message+String(error.code)
                             print(message)
+                            failed(message)
                         }
-//                        return true
                     }
                 }
             )
             })
         }
-        return (b_verify,str_error);
     }
     
     public func errorMessageForLAErrorCode(errorCode: Int) -> String {
