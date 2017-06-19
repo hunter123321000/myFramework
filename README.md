@@ -26,8 +26,14 @@ develop framework by swift
 ---
 ### 指紋驗證(逃逸閉包 > 取得驗證回傳值)
 
-* touchIDVerify().isTouchID(succeed: {
+* 方式一：touchIDVerify().isTouchID(succeed: {
             print("解鎖成功")
         }) { (error) in
             print(error)
         };
+* 方式二：(包含回傳錯誤訊息)
+touchIDVerify().touchIdWithHand(fallBackTitle: "", succeed: {
+            print("解鎖成功")
+        }) { (error) in
+            print(error)
+        }
