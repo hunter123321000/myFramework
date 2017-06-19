@@ -23,3 +23,11 @@ develop framework by swift
 ### 資料轉換運用
 
 * dataConvert().hexStringtoAscii(_ hexString : String)// hex to String
+---
+### 指紋驗證(逃逸閉包 > 取得驗證回傳值)
+
+* touchIDVerify().isTouchID(succeed: {
+            print("解鎖成功")
+        }) { (error) in
+            print(error)
+        };
