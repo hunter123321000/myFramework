@@ -37,3 +37,15 @@ touchIDVerify().touchIdWithHand(fallBackTitle: "", succeed: {
         }) { (error) in
             print(error)
         }
+---
+### 資料IO
+
+* UserDefaults: 
+1. opeUserDefaults().set(key:String, value:AnyObject?)
+2. opeUserDefaults().remove(key:String?)
+3. opeUserDefaults().get(key:String)->AnyObject?
+
+* PlistFile
+1. opeFileIO.savePlistFiles(fileName:String,url:NSURL,strArray:[String])
+2. opeFileIO.readFlie(name:String , fileBaseUrl:NSURL) ->NSString
+3. opeFileIO.creatFile(name:String, fileBaseUrl:NSURL) -> String
