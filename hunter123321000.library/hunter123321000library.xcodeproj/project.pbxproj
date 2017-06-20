@@ -27,6 +27,11 @@
 		0F7DA1511EF42A15004CC0A4 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7DA1501EF42A15004CC0A4 /* LocalAuthentication.framework */; };
 		0F7DA1531EF42A50004CC0A4 /* touchIDVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7DA1521EF42A50004CC0A4 /* touchIDVerify.swift */; };
 		714BD33D1EEFB01E009534FF /* alertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714BD33C1EEFB01E009534FF /* alertView.swift */; };
+		715394621EF8FB69003307D5 /* opeUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715394611EF8FB69003307D5 /* opeUserDefaults.swift */; };
+		715394631EF8FD50003307D5 /* opeUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715394611EF8FB69003307D5 /* opeUserDefaults.swift */; };
+		715394651EF8FDA1003307D5 /* testOpeUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715394641EF8FDA1003307D5 /* testOpeUserDefaults.swift */; };
+		715394681EF90CEB003307D5 /* opeFileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715394671EF90CEB003307D5 /* opeFileIO.swift */; };
+		715394691EF90CEB003307D5 /* opeFileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715394671EF90CEB003307D5 /* opeFileIO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,9 @@
 		0F7DA1501EF42A15004CC0A4 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		0F7DA1521EF42A50004CC0A4 /* touchIDVerify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = touchIDVerify.swift; sourceTree = "<group>"; };
 		714BD33C1EEFB01E009534FF /* alertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertView.swift; sourceTree = "<group>"; };
+		715394611EF8FB69003307D5 /* opeUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = opeUserDefaults.swift; sourceTree = "<group>"; };
+		715394641EF8FDA1003307D5 /* testOpeUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testOpeUserDefaults.swift; sourceTree = "<group>"; };
+		715394671EF90CEB003307D5 /* opeFileIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = opeFileIO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 				0F7DA0131EED88CC004CC0A4 /* dataConvert.swift */,
 				0F7DA1521EF42A50004CC0A4 /* touchIDVerify.swift */,
 				0F7DA04A1EEE81AE004CC0A4 /* CustomUI */,
+				715394661EF90CBF003307D5 /* IOAccess */,
 			);
 			path = hunter123321000.library;
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 				0F7DA0011EED227E004CC0A4 /* Info.plist */,
 				0F7DA0111EED2FF5004CC0A4 /* testCommomFunc.swift */,
 				0F7DA0161EED894F004CC0A4 /* testDataConvert.swift */,
+				715394641EF8FDA1003307D5 /* testOpeUserDefaults.swift */,
 			);
 			path = hunter123321000.libraryTests;
 			sourceTree = "<group>";
@@ -142,6 +152,15 @@
 				0F7DA1501EF42A15004CC0A4 /* LocalAuthentication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		715394661EF90CBF003307D5 /* IOAccess */ = {
+			isa = PBXGroup;
+			children = (
+				715394611EF8FB69003307D5 /* opeUserDefaults.swift */,
+				715394671EF90CEB003307D5 /* opeFileIO.swift */,
+			);
+			name = IOAccess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +280,12 @@
 				0F7DA04F1EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */,
 				0F7DA1531EF42A50004CC0A4 /* touchIDVerify.swift in Sources */,
 				0F7DA01E1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */,
+				715394621EF8FB69003307D5 /* opeUserDefaults.swift in Sources */,
 				0F7DA00F1EED2822004CC0A4 /* commonFunc.swift in Sources */,
 				0F7DA04C1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
 				0F7DA0141EED88CC004CC0A4 /* dataConvert.swift in Sources */,
 				0F7DA0C81EF18B90004CC0A4 /* myBtn.swift in Sources */,
+				715394681EF90CEB003307D5 /* opeFileIO.swift in Sources */,
 				714BD33D1EEFB01E009534FF /* alertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +297,11 @@
 				0F7DA01F1EEE7E3A004CC0A4 /* PaddingLabel.swift in Sources */,
 				0F7DA0501EEE8240004CC0A4 /* SwiftSpinner.swift in Sources */,
 				0F7DA0001EED227E004CC0A4 /* hunter123321000_libraryTests.swift in Sources */,
+				715394631EF8FD50003307D5 /* opeUserDefaults.swift in Sources */,
 				0F7DA0121EED2FF5004CC0A4 /* testCommomFunc.swift in Sources */,
+				715394651EF8FDA1003307D5 /* testOpeUserDefaults.swift in Sources */,
 				0F7DA0171EED894F004CC0A4 /* testDataConvert.swift in Sources */,
+				715394691EF90CEB003307D5 /* opeFileIO.swift in Sources */,
 				0F7DA0101EED2822004CC0A4 /* commonFunc.swift in Sources */,
 				0F7DA0151EED88CC004CC0A4 /* dataConvert.swift in Sources */,
 				0F7DA04D1EEE81C1004CC0A4 /* BorderedButton.swift in Sources */,
