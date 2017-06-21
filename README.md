@@ -13,6 +13,8 @@ develop framework by swift
 * commonFunc().isValidPwd(pwd: "a123#45A678",maxLen:20) //密碼正規化
    
 * commonFunc().isValidEmail(pwd: "a123#45A678",maxLen:20) //email正規化
+
+* commonFunc().getNow(setDateFormat: "yyyy-MM-dd hh:mm：ss")//取得時間、日期
 ---
 ### Alert運用
 
