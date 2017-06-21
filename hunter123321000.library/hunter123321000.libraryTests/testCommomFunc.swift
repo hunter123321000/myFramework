@@ -39,5 +39,8 @@ class testCommonFunc: XCTestCase {
         XCTAssert(obj.isSameInput(any1: 123,"123",123,1234,"123") == false)
         
         XCTAssert(obj.isValidPwd(pwd: "a123#45A678",maxLen:20) == true)
+        
+        XCTAssertEqual(commonFunc().getNow(setDateFormat: "yyyy-MM-dd hh:mm"), "2017-06-21 03:30")
     }
+
 }

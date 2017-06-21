@@ -69,5 +69,12 @@ public class commonFunc: NSObject {
         let pwdPredicate = NSPredicate(format:"SELF MATCHES %@", RegEx)
         return pwdPredicate.evaluate(with: pwd)
     }
+    
+    public func getNow(setDateFormat:String) -> String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = setDateFormat
+        return formatter.string(from: date)
+    }
 
 }
