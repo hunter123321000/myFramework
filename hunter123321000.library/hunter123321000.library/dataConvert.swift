@@ -22,4 +22,21 @@ public class dataConvert: NSObject {
         return String(characters)
     }
     
+
+    // the completion closure signature is (String) -> ()
+    public func getDataFromUrl(sMainUrl:String, completion:@escaping (String) -> ()) {
+        if let url = URL(string: sMainUrl) {
+            let request = URLRequest(url: url)
+            let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+                if let data = data, let jsonString = String(data: data, encoding: String.Encoding.utf8) , error == nil {
+                    completion(jsonString) }
+                else {
+                    print("error")
+                }
+            })
+            task.resume()
+        }
+    }
+    
+    
 }
