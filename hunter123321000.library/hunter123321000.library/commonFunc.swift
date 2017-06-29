@@ -13,14 +13,28 @@ public class commonFunc: NSObject {
     public func isSameString(str1:String,_ strs:String...) -> Bool{
         var tmp:Int = 0;
         for str in strs{
-            if(str1 == str){
-                tmp += 1;
-                if(tmp == strs.count){
-                 return true
-                }
-            }
-            else{
+            /*
+             沒有採用guard的原始方式
+             */
+//            if(str1 == str){
+//                tmp += 1;
+//                if(tmp == strs.count){
+//                 return true
+//                }
+//            }
+//            else{
+//                return false
+//            }
+            
+            /*
+             採用guard的原始方式
+             */
+            guard str1 == str else {
                 return false
+            }
+            tmp += 1
+            if(tmp == strs.count){
+                return true
             }
         }
         return false
@@ -29,17 +43,25 @@ public class commonFunc: NSObject {
     public func isSameInput(any1:Any,_ anys:Any...) -> Bool{
         var tmp:Int = 0;
         for any in anys{
-            let tmpStr = String(describing: any1)
-            let tmpStr2 = String(describing: any)
-            debugPrint("tmpStr="+tmpStr+"   tmpStr2="+tmpStr2);
-            if(tmpStr == tmpStr2){
-                tmp += 1;
-                if(tmp == anys.count){
-                    return true
-                }
-            }
-            else{
+//            let tmpStr = String(describing: any1)
+//            let tmpStr2 = String(describing: any)
+//            debugPrint("tmpStr="+tmpStr+"   tmpStr2="+tmpStr2);
+//            if(tmpStr == tmpStr2){
+//                tmp += 1;
+//                if(tmp == anys.count){
+//                    return true
+//                }
+//            }
+//            else{
+//                return false
+//            }
+            
+            guard String(describing: any1) == String(describing: any)  else {
                 return false
+            }
+            tmp += 1
+            if(tmp == anys.count){
+                return true
             }
         }
         return false
